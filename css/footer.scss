@@ -1,0 +1,106 @@
+$footer-color: #134347;
+
+body {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+
+    .footer-img {
+        position: relative;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 19rem;
+            height: auto;
+        }
+
+        h1 {
+            position: absolute;
+            line-height: 4rem;
+            text-align: center;
+            color: rgba(255, 255, 255, .5);
+            font-style: italic;
+            font-family: 'Libre Baskerville', sans-serif;
+            font-weight: normal;
+
+            @media(max-width: 500px) {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-style: normal;
+                color: rgba(255, 255, 255, .95);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .icons {
+        background-color: $footer-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        a {
+            font-size: 3rem;
+            border-radius: 50%;
+            color: grey;
+            text-decoration: none;
+            width: 4rem;
+            height: 4rem;
+            background-color: $footer-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: clamp(1%, 2.5%, 4%);
+            border: 3px solid grey;
+            position: relative;
+
+            i {
+                font-size: 80%;
+                display: block;
+            }
+
+            .cc {
+                font-family: 'Julius Sans One', sans-serif;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 50%;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 4.1rem;
+                height: 4.1rem;
+                background-color: grey;
+                border-radius: 50%;
+                z-index: -1; 
+            }
+
+            &:hover{
+
+                &:before {
+                    z-index: 1;
+                }
+
+                i {
+                    color: $footer-color;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}

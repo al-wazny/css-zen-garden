@@ -1,0 +1,44 @@
+.page-header {
+    background: url("http://www.csszengarden.com/214/huntington.jpg") no-repeat ;
+    background-size: cover;
+    background-position: 0 -110px;
+    min-height: 100%;
+    grid-row: 1/2;
+
+    .logo {
+        grid-column: 2/-2;
+        height: 100%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Julius Sans One', sans-serif;
+        
+        img {
+            width: auto;
+            height: 130px;
+        }
+    
+        .site-name {
+            padding-left: 1rem;
+            font-weight: 400;
+            
+            h1,h2 {
+                margin: .5rem;
+                color: #fff;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-style: italic;
+                font-weight: normal;
+                font-family: 'Libre Baskerville', sans-serif;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }   
+}

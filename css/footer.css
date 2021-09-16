@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+}
+
+footer .footer-img {
+  position: relative;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 19rem;
+  height: auto;
+}
+
+footer .footer-img h1 {
+  position: absolute;
+  line-height: 4rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: normal;
+}
+
+@media (max-width: 500px) {
+  footer .footer-img h1 {
+    font-size: 1.5rem;
+  }
+}
+
+footer .footer-img h1 a {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+
+footer .footer-img h1 a:hover {
+  text-decoration: underline;
+}
+
+footer .icons {
+  background-color: #134347;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icons a {
+  font-size: 3rem;
+  border-radius: 50%;
+  color: grey;
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  background-color: #134347;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: clamp(1%, 2.5%, 4%);
+  border: 3px solid grey;
+  position: relative;
+}
+
+footer .icons a i {
+  font-size: 80%;
+  display: block;
+}
+
+footer .icons a .cc {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50%;
+}
+
+footer .icons a:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4.1rem;
+  height: 4.1rem;
+  background-color: grey;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+footer .icons a:hover:before {
+  z-index: 1;
+}
+
+footer .icons a:hover i {
+  color: #134347;
+  z-index: 2;
+}
+/*# sourceMappingURL=footer.css.map */
